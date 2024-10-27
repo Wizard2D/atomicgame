@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://bq1bijif7hcp5"]
+
+[ext_resource type="Shader" path="res://Shaders/AtomBase.gdshader" id="1_h0bxd"]
+
+[resource]
+shader = ExtResource("1_h0bxd")
+shader_parameter/pulse_color = Vector4(0.18, 0.18, 0.18, 1)
+shader_parameter/pulse_speed = 2.0

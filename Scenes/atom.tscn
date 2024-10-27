@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://8ec3j235funr"]
+
+[ext_resource type="Script" path="res://Scripts/EntityBehaviour/AtomRBBehaviour.cs" id="1_yucht"]
+[ext_resource type="Material" uid="uid://bq1bijif7hcp5" path="res://Materials/AtomMaterial.tres" id="2_31wxk"]
+[ext_resource type="Texture2D" uid="uid://rgpnnmkg8p2" path="res://Textures/CircleOutlined.png" id="2_yc4e3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ep1io"]
+radius = 47.0
+
+[node name="Atom" type="RigidBody2D"]
+mass = 0.1
+gravity_scale = 0.0
+angular_damp = 6.0
+script = ExtResource("1_yucht")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+material = ExtResource("2_31wxk")
+scale = Vector2(0.679999, 0.679999)
+texture = ExtResource("2_yc4e3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ep1io")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -6.0
+offset_top = -13.0
+offset_right = 34.0
+offset_bottom = 27.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "H"
+autowrap_mode = 0
+text_direction = 1
+structured_text_bidi_override = 6

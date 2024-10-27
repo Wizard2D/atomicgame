@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://r7x3wxwe6472"]
+
+[ext_resource type="Script" path="res://Scripts/EntityBehaviour/MoleculeBehaviour.cs" id="1_q2fbx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iyphu"]
+
+[node name="Molecule" type="RigidBody2D"]
+script = ExtResource("1_q2fbx")
+
+[node name="MoleculeCollider" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_iyphu")
+
+[node name="Atoms" type="Node" parent="."]

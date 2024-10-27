@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://ft4gnoqdobod"]
+
+[ext_resource type="Script" path="res://Scripts/CameraPlaneMovement.cs" id="1_wf5pv"]
+[ext_resource type="PackedScene" uid="uid://8ec3j235funr" path="res://Scenes/atom.tscn" id="1_y84b1"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("1_wf5pv")
+
+[node name="Atoms" type="Node" parent="."]
+
+[node name="Atom" parent="Atoms" instance=ExtResource("1_y84b1")]
+position = Vector2(-297, -86)
+
+[node name="Atom2" parent="Atoms" instance=ExtResource("1_y84b1")]
+position = Vector2(74, -3)
+
+[node name="Atom3" parent="Atoms" instance=ExtResource("1_y84b1")]
+position = Vector2(-98, -176)
+
+[node name="Atom4" parent="Atoms" instance=ExtResource("1_y84b1")]
+position = Vector2(273, -93)
+
+[node name="Atom5" parent="Atoms" instance=ExtResource("1_y84b1")]
+position = Vector2(-135, 53)
+
+[node name="Atom6" parent="Atoms" instance=ExtResource("1_y84b1")]
+position = Vector2(236, 136)
+
+[node name="Atom7" parent="Atoms" instance=ExtResource("1_y84b1")]
+position = Vector2(-454, 150)
+
+[node name="Atom8" parent="Atoms" instance=ExtResource("1_y84b1")]
+position = Vector2(-83, 233)
+
+[node name="Atom9" parent="Atoms" instance=ExtResource("1_y84b1")]
+position = Vector2(52, -245)
+
+[node name="Atom10" parent="Atoms" instance=ExtResource("1_y84b1")]
+position = Vector2(423, -162)
